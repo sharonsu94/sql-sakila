@@ -133,8 +133,7 @@
     (
         SELECT language_id
         FROM `language`
-        WHERE name = 'English'
-);
+        WHERE name = 'English');
 
 7b)
 
@@ -176,6 +175,7 @@
     WHERE c.name = 'Family';
 
 7e)
+
     SELECT f.title, COUNT(r.rental_id)
     FROM rental r
     JOIN inventory i
@@ -207,6 +207,7 @@
     ON city.country_id = country.country_id;
 
 7h)
+
     SELECT c.name, sum(p.amount)
     FROM category c
     JOIN film_category fc
