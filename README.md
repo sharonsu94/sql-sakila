@@ -75,8 +75,14 @@
 4d)
 
     UPDATE actor
-    SET first_name = 'GROUCHO', `Actor Name` = 'GROUCHO WILLIAMS'
-    WHERE first_name = 'HARPO';
+    SET first_name = 'GROUCHO'
+    WHERE last_name = 'WILLIAMS'
+    AND first_name = 'HARPO';
+
+    UPDATE actor
+    SET first_name = 'MUCHO GROUCHO'
+    WHERE last_name = 'WILLIAMS'
+    AND first_name != 'GROUCHO';
   	
 5a)
 
